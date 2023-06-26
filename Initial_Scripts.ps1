@@ -9,6 +9,8 @@ mkdir "Initial_Setup"
 cd c:\
 mkdir "Free Office"
 
+cd c:\Initial_Setup\
+
 Invoke-WebRequest -uri https://raw.githubusercontent.com/SaimonIslamPrantik/initial_setups_core/main/Bloatbox.exe -OutFile "c:\Initial_Setup\Bloatbox.exe"
 Invoke-Item "Bloatbox.exe"
 
