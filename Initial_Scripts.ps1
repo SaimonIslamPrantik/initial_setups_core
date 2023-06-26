@@ -12,7 +12,7 @@ Invoke-WebRequest -uri https://raw.githubusercontent.com/SaimonIslamPrantik/init
 Invoke-Item "Bloatbox.exe"
 
 # Invoke-WebRequest -uri https://raw.githubusercontent.com/SaimonIslamPrantik/mnlactv/main/Activator%20MS%20Office.cmd -OutFile c:\Initial_Setup\AC_MSO.cmd
-Invoke-Item "AC_MSO.cmd"
+#Invoke-Item "AC_MSO.cmd"
 
 Invoke-WebRequest -uri https://raw.githubusercontent.com/SaimonIslamPrantik/initial_setups_core/main/CLICK%20HERE%20FOR%20MANUAL%20ACTIVATION.cmd -OutFile c:\Initial_Setup\WIN_MSO.cmd
 Invoke-Item "WIN_MSO.cmd"
