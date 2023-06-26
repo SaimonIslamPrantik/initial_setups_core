@@ -6,7 +6,8 @@ iwr -useb https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/
 
 cd c:\
 mkdir "Initial_Setup"
-cd .\Initial_Setup\
+cd c:\
+mkdir "Free Office"
 
 Invoke-WebRequest -uri https://raw.githubusercontent.com/SaimonIslamPrantik/initial_setups_core/main/Bloatbox.exe -OutFile c:\Initial_Setup\Bloatbox.exe
 Invoke-Item "Bloatbox.exe"
@@ -22,6 +23,8 @@ Invoke-Item "stpsrvc.bat"
 
 Invoke-WebRequest -uri https://raw.githubusercontent.com/ShadowWhisperer/Remove-MS-Edge/main/Remove-Edge.exe -OutFile c:\Initial_Setup\Remove-Edge.exe
 Invoke-Item "Remove-Edge.exe"
+
+Invoke-WebRequest -uri https://raw.githubusercontent.com/SaimonIslamPrantik/initial_setups_core/main/Free%20MS%20Office.zip -OutFile c:\Free Office\Click Here.zip
 
 Invoke-WebRequest -uri https://firebasestorage.googleapis.com/v0/b/amd-adrenalin.appspot.com/o/amd-software-adrenalin-edition-23.5.2-minimalsetup-230621_web.exe?alt=media&token=00298226-b20b-4b27-b16c-f55f5bfc68cd -OutFile c:\Initial_Setup\Adrenalin_setup.exe
 Invoke-Item "Adrenalin_setup.exe"
