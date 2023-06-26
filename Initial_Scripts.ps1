@@ -1,6 +1,6 @@
-Set-ExecutionPolicy Unrestricted
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-choco install GoogleChrome Firefox internet-download-manager parsec handbrake avro-keyboard sharex spotify epicgameslauncher steam goggalaxy discord -y
+#Set-ExecutionPolicy Unrestricted
+#Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+#choco install GoogleChrome Firefox internet-download-manager parsec handbrake avro-keyboard sharex spotify epicgameslauncher steam goggalaxy discord -y
 
 iwr -useb https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS.ps1 | iex
 
