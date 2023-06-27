@@ -1,7 +1,6 @@
 Set-ExecutionPolicy Unrestricted
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-iwr -useb https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS.ps1 | iex
 
 cd c:\
 mkdir "Initial_Setup"
@@ -25,6 +24,8 @@ Invoke-Item "Remove-Edge.exe"
 Invoke-WebRequest -uri "https://raw.githubusercontent.com/SaimonIslamPrantik/initial_setups_core/main/Free%20MS%20Office.zip" -OutFile "c:\Free Office\Click Here.zip"
 
 choco install GoogleChrome Firefox internet-download-manager potplayer parsec handbrake avro-keyboard sharex spotify epicgameslauncher steam goggalaxy discord -y
+
+iwr -useb https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS.ps1 | iex
 
 Invoke-WebRequest -uri "https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/download/v5.6/BCUninstaller_5.6_setup.exe" -OutFile "c:\Initial_Setup\BCUninstaller_setup.exe"
 Invoke-Item "BCUninstaller_setup.exe"
