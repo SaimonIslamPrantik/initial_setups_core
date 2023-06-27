@@ -40,7 +40,7 @@ cls
 clear
 
 
-write-host "Please Delete (Initial_Setup) Folder From Your C:\ Drive"
+write-host "Please Delete (Initial_Setup) Folder From Your C:\ Drive & Don't Forget to RESTART"
 write-host "Have a Nice Debloated Day!!!"
 write-host "Setup Executed By Prantik"
 
