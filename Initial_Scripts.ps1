@@ -23,7 +23,7 @@ Invoke-Item "Remove-Edge.exe"
 
 Invoke-WebRequest -uri "https://raw.githubusercontent.com/SaimonIslamPrantik/initial_setups_core/main/Free%20MS%20Office.zip" -OutFile "c:\Free Office\Click Here.zip"
 
-choco install GoogleChrome Firefox internet-download-manager potplayer parsec handbrake avro-keyboard sharex spotify epicgameslauncher steam goggalaxy discord -y
+choco install GoogleChrome Firefox internet-download-manager potplayer sunshine handbrake avro-keyboard sharex spotify epicgameslauncher steam goggalaxy discord -y
 
 iwr -useb https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS.ps1 | iex
 
