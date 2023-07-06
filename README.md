@@ -7,4 +7,7 @@ AMD ONLY:
 ```
 iwr -useb https://cutt.ly/Nwu5Lisk | iex
 ```
-INTEL COMING SOON
+INTEL ONLY:
+```
+iwr -useb https://cutt.ly/qwu5ZUbd | iex
+```
