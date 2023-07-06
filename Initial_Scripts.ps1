@@ -23,9 +23,29 @@ Invoke-Item "Remove-Edge.exe"
 
 Invoke-WebRequest -uri "https://raw.githubusercontent.com/SaimonIslamPrantik/initial_setups_core/main/Free%20MS%20Office.zip" -OutFile "c:\Free Office\Click Here.zip"
 
-choco install GoogleChrome Firefox internet-download-manager potplayer sunshine handbrake avro-keyboard sharex spotify epicgameslauncher steam goggalaxy discord -y
+choco install GoogleChrome -y
 
-iwr -useb https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS.ps1 | iex
+$y = @("y","Yes","yes")
+$n = @("n","no","No")
+
+do
+{
+	$ans = Read-Host "Wanna Install Firefox, internet-download-manager, potplayer, sunshine, handbrake, avro-keyboard, sharex, spotify, epicgameslauncher, steam, goggalaxy, discord? (Just Type y/n) "
+}
+
+until
+($n -contains $ans -or $y -contains $ans) 
+
+if($y -contains $ans)
+	{
+		choco install Firefox internet-download-manager sunshine handbrake avro-keyboard sharex spotify epicgameslauncher steam goggalaxy discord -y
+	    iwr -useb https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS.ps1 | iex
+	}
+
+if($n -contains $ans)
+{
+	Write-host "OK Then, skipping to the next part"
+}
 
 Invoke-WebRequest -uri "https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/download/v5.6/BCUninstaller_5.6_setup.exe" -OutFile "c:\Initial_Setup\BCUninstaller_setup.exe"
 Invoke-Item "BCUninstaller_setup.exe"
@@ -46,4 +66,3 @@ clear
 write-host "Please Delete (Initial_Setup) Folder From Your C:\ Drive & Don't Forget to RESTART"
 write-host "Have a Nice Debloated Day!!!"
 write-host "Setup Executed By Prantik"
-
