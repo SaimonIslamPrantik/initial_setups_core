@@ -5,6 +5,6 @@ Run this in Powershell Administrator Mode, debloat and install necessary apps vi
 
 AMD ONLY:
 ```
-iwr -useb https://cutt.ly/awydYaaB | iex
+iwr -useb https://cutt.ly/Nwu5Lisk | iex
 ```
 INTEL COMING SOON
