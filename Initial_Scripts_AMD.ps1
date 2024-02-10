@@ -5,32 +5,20 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 cd c:\
 mkdir "Initial_Setup"
 cd c:\
-mkdir "Free Office"
+mkdir "Free MS Office"
 
 cd c:\Initial_Setup\
 
-Invoke-WebRequest -uri https://raw.githubusercontent.com/SaimonIslamPrantik/initial_setups_core/main/Bloatbox.exe -OutFile "c:\Initial_Setup\Bloatbox.exe"
-Invoke-Item "Bloatbox.exe"
 
-# Invoke-WebRequest -uri "https://raw.githubusercontent.com/SaimonIslamPrantik/mnlactv/main/Activator%20MS%20Office.cmd" -OutFile "c:\Initial_Setup\AC_MSO.cmd"
-#Invoke-Item "AC_MSO.cmd"
+iwr -useb https://christitus.com/win | iex
 
-Invoke-WebRequest -uri "https://raw.githubusercontent.com/SaimonIslamPrantik/initial_setups_core/main/CLICK%20HERE%20FOR%20MANUAL%20ACTIVATION.cmd" -OutFile "c:\Initial_Setup\WIN_MSO.cmd"
-Invoke-Item "WIN_MSO.cmd"
-
-Invoke-WebRequest -uri "https://raw.githubusercontent.com/ShadowWhisperer/Remove-MS-Edge/main/Remove-Edge.exe" -OutFile "c:\Initial_Setup\Remove-Edge.exe"
-Invoke-Item "Remove-Edge.exe"
-
-Invoke-WebRequest -uri "https://raw.githubusercontent.com/SaimonIslamPrantik/initial_setups_core/main/Free%20MS%20Office.zip" -OutFile "c:\Free Office\Click Here.zip"
-
-choco install GoogleChrome -y
 
 $y = @("y","Yes","yes")
 $n = @("n","no","No")
 
 do
 {
-	$ans = Read-Host "Wanna Install Firefox, internet-download-manager, potplayer, sunshine, handbrake, avro-keyboard, sharex, spotify, epicgameslauncher, steam, goggalaxy, discord? (Just Type y/n) "
+	$ans = Read-Host "Wanna Install , sunshine, handbrake, avro-keyboard, sharex, spotify, epicgameslauncher, steam, ? (Just Type y/n) "
 }
 
 until
@@ -38,8 +26,7 @@ until
 
 if($y -contains $ans)
 	{
-		choco install Firefox internet-download-manager sunshine handbrake avro-keyboard sharex spotify epicgameslauncher steam goggalaxy discord -y
-	    iwr -useb https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS.ps1 | iex
+		choco install  sunshine handbrake avro-keyboard sharex spotify epicgameslauncher steam  -y
 	}
 
 if($n -contains $ans)
