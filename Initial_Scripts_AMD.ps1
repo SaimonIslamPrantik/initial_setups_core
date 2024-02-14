@@ -1,3 +1,4 @@
+msg * "Thanks for running our script, just go through"
 Set-ExecutionPolicy Unrestricted
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
@@ -15,6 +16,26 @@ iwr -useb https://christitus.com/win | iex
 
 $y = @("y","Yes","yes")
 $n = @("n","no","No")
+
+
+do
+{
+	$ans = Read-Host "Wanna uninstall Microsoft Edge ? (Just Type y/n) "
+}
+
+until
+($n -contains $ans -or $y -contains $ans) 
+
+if($y -contains $ans)
+	{
+		remainin code should be here
+	}
+
+if($n -contains $ans)
+{
+	Write-host "OK Then, skipping to the next part"
+}
+
 
 do
 {
