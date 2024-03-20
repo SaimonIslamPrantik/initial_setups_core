@@ -1,3 +1,7 @@
+***BROKEN***
+
+This repository won't be maintained anymore
+
 
 What does this script do:
 1. One click intial software instalation
